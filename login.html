@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register - ITB 2000</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">ITB 2000</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item active"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Login/Register Content -->
+    <div class="container mt-4">
+        <h2>Login</h2>
+        <form id="loginForm" action="read.php" method="POST">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <hr>
+        <p>If not registered, please fill out the form below:</p>
+        <form id="registerForm" action="create.php" method="POST">
+            <div class="form-group">
+                <label for="reg_name">Name:</label>
+                <input type="text" class="form-control" id="reg_name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" class="form-control" id="department" name="department" required>
+            </div>
+            <div class="form-group">
+                <label for="place">Place:</label>
+                <input type="text" class="form-control" id="place" name="place" required>
+            </div>
+            <div class="form-group">
+                <label for="reg_email">Email:</label>
+                <input type="email" class="form-control" id="reg_email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="reg_password">Password:</label>
+                <input type="password" class="form-control" id="reg_password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="planning">Planning for Attending:</label>
+                <select class="form-control" id="planning" name="planning" required>
+                    <option value="YES">Yes</option>
+                    <option value="NO">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="family_size">Family for Attending:</label>
+                <input type="number" class="form-control" id="family_size" name="family_size" required>
+            </div>
+            <button type="submit" class="btn btn-secondary">Register</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis cursus.</p>
+        <div class="social-icons">
+            <a href="#" alt="facebook">Facebook</a> |
+            <a href="#" alt="twitter">Twitter</a> |
+            <a href="#" alt="pinterest">Pinterest</a> |
+            <a href="#" alt="instagram">Instagram</a>
+        </div>
+        <p>© Copyright 2024 | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

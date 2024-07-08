@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.jumbotron {
+    background: #f5f5f5;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+}
+
+.news ul {
+    list-style-type: none;
+}
+
+.news li {
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer p {
+    margin: 10px 0 0;
+}
